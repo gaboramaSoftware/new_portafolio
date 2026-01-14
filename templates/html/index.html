@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Based Menu</title>
+    <title>Gabriel Ramirez - Portafolio</title>
     <link rel="stylesheet" href="/templates/css/menuStyles.css">
     
     <script type="importmap">
@@ -14,23 +14,23 @@
         }
     }
     </script>
-
 </head>
 <body>
 
+    <sun-3d></sun-3d>
+
+    <dc-header></dc-header>
+    
+    <button id="muteBtn" style="position: fixed; bottom: 20px; right: 20px; z-index: 100;">🔇</button>
+    <script type="module" src="/src/components/DCHeader.js"></script>
+    
     <audio id="jukebox" loop style="display: none;">
-        <source src="../../assets/Blank Banshee - Menu.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
+        <source src="/assets/Blank Banshee - Menu.mp3" type="audio/mp3">
     </audio>
 
-    <button id="muteBtn">🔇 Activar Sonido</button>
+    <script type="module" src="/templates/js/3DCountry.js"></script>
+    <script type="module" src="/templates/js/menuButtons.js"></script> <script type="module" src="/templates/js/jukebox.js"></script>
+    <script src="/js/script.js"></script>
 
-    <header>MODELO 3D</header>
-    
-    <div id="scene-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden;"></div>
-    
-    <script type="module" src="/templates/js/BasedMenu.js"></script>
-    <script type="module" src="/templates/js/jukebox.js"></script>
-        
 </body>
 </html>
