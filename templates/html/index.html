@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Based Menu</title>
+    <link rel="stylesheet" href="/templates/css/menuStyles.css">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.150.1/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.150.1/examples/jsm/"
+        }
+    }
+    </script>
+
+</head>
+<body>
+
+    <audio id="jukebox" loop style="display: none;">
+        <source src="../../assets/Blank Banshee - Menu.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <button id="muteBtn">🔇 Activar Sonido</button>
+
+    <header>MODELO 3D</header>
+    
+    <div id="scene-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden;"></div>
+    
+    <script type="module" src="/templates/js/BasedMenu.js"></script>
+    <script type="module" src="/templates/js/jukebox.js"></script>
+        
+</body>
+</html>
